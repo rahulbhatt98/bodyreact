@@ -1,0 +1,35 @@
+.content {
+    position: relative;
+  }
+  
+  .content .perticles-circle {
+    position: absolute;
+    background-color: #3d857e;
+    width: 50px;
+    height: 50px;
+    top: -12%;
+    right: 3%;
+    /* z-index: -1; */
+    border-radius: 50%;
+    transform: scale(0);
+  }
+  
+  .content .perticles-circle {
+    /* border: dotted 3px #3d857e; */
+    background-color: transparent;
+  }
+  
+  @keyframes particles-1 {
+    from {
+      transform: scale(0);
+      border: 2px dotted #3d857e;
+    }
+    to {
+      transform: scale(1);
+      border: 5px dotted #3d857e;
+    }
+  }
+  
+  .active .content .perticles-circle {
+    animation: particles-1 1.5s 0.025s;
+  }

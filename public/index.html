@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <script type='application/ld+json'>
+    {
+      "@context": "https://www.schema.org",
+      "@type": "product",
+      "brand": "The Body Shop",
+      "logo": "https://www.thebodyshop.in/static/frontend/Tenovia/bodyshop/en_US/images/logo.svg",
+     "aggregateRating": {
+        "@type": "aggregateRating",
+        "ratingValue": "Product Rating",
+        "reviewCount": "Number of Reviews"
+      }
+    }
+     </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://www.thebodyshop.in/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.thebodyshop.in/searchtap/results?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+  <script type="application/ld+json">
+    {  "@context": "https://schema.org",  "@type": "Organization",  "Name": "thebodyshop",  "URL": "https://www.thebodyshop.in/", 
+    
+    "contactPoint" : [{
+    "@type" : "ContactPoint",
+    "telephone" : "+91-9599227343",
+    "contactType" : "Customer Service"
+    }],
+    "logo" : "https://www.thebodyshop.in/static/frontend/Tenovia/bodyshop/en_US/images/logo.svg",
+    "sameAs" : [
+    "https://www.facebook.com/TheBodyShopIndia/",
+    "https://twitter.com/TheBodyShopIND",
+    "https://www.instagram.com/thebodyshopindia/",
+    "https://www.youtube.com/channel/UChdVYSGTX-mQTx-h5630wSA"
+    ]
+    }
+    </script>
+  <script type="application/ld+json">
+    {
+    "@context" : "https://schema.org",
+    "@type" : "WebSite",
+    "url" : "https://www.thebodyshop.in/",
+    "potentialAction" : {
+    "@type" : "SearchAction",
+    "target" : "https://www.thebodyshop.in/{search_term_string}?userQuery=true",
+    "query-input" : "required name=search_term_string"
+    }
+    }
+    </script>
+
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000" />
+  <!-- <meta name="description" content="Web site created using create-react-app" /> -->
+
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/assets/images/pwa/icon180.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <title>The Body Shop</title>
+  <style>
+    @font-face {
+      font-family: "Work Sans Medium";
+      src: url("/assets/fonts/Work_Sans/WorkSans-Medium.ttf")
+    }
+
+    @font-face {
+      font-family: "Work Sans SemiBold";
+      src: url("/assets/fonts/Work_Sans/WorkSans-SemiBold.ttf")
+    }
+
+    @font-face {
+      font-family: "Work Sans Bold";
+      src: url("/assets/fonts/Work_Sans/WorkSans-Bold.ttf")
+    }
+
+    @font-face {
+      font-family: "Work Sans";
+      src: url("/assets/fonts/Work_Sans/WorkSans-Regular.ttf")
+    }
+
+    @font-face {
+      font-family: "Work Sans Regular";
+      src: url("/assets/fonts/Work_Sans/WorkSans-Regular.ttf")
+    }
+
+    @font-face {
+      font-family: "Work Sans Light";
+      src: url("/assets/fonts/Work_Sans/WorkSans-Light.ttf")
+    }
+
+    @font-face {
+      font-family: "Druk Bold";
+      src: url("/assets/fonts/Druk/Druk-Bold.otf")
+    }
+
+    @font-face {
+      font-family: "Druk";
+      src: url("/assets/fonts/Druk/Druk-Bold.otf")
+    }
+
+    @font-face {
+      font-family: "Druk SemiBold";
+      src: url("/assets/fonts/Druk/Druk-SemiBold.otf")
+    }
+
+    @font-face {
+      font-family: "Recoleta";
+      src: url("/assets/fonts/Recoleta/Recoleta-Regular.ttf")
+    }
+
+    @font-face {
+      font-family: "Recoleta Bold";
+      src: url("/assets/fonts/Recoleta/Recoleta-Bold.ttf")
+    }
+
+    @font-face {
+      font-family: "Recoleta Medium";
+      src: url("/assets/fonts/Recoleta/Recoleta-Medium.ttf")
+    }
+
+    @font-face {
+      font-family: "Recoleta Alt";
+      src: url("/assets/fonts/Recoleta/RecoletaAlt-Regular.ttf")
+    }
+
+    @font-face {
+      font-family: "Recoleta Alt Bold";
+      src: url("/assets/fonts/Recoleta/RecoletaAlt-Bold.ttf")
+    }
+
+    @font-face {
+      font-family: "Recoleta Alt SemiBold";
+      src: url("/assets/fonts/Recoleta/RecoletaAlt-SemiBold.ttf")
+    }
+
+    @font-face {
+      font-family: "Recoleta Alt Medium";
+      src: url("/assets/fonts/Recoleta/RecoletaAlt-Medium.ttf")
+    }
+
+    #offlineText {
+      text-align: center;
+      color: #ffffff;
+      position: fixed;
+      top: 90%;
+      left: 38%;
+      z-index: 10000;
+      width: 375px;
+    }
+
+    #offlineText>h2 {
+      background-color: #f38527;
+      padding: 10px;
+      border-radius: 5px;
+
+    }
+
+    @media screen and (max-width: 1024px) {
+      #offlineText {
+        left: 33%;
+        top: 83%;
+
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      #offlineText {
+        left: 26%;
+        top: 83%;
+
+      }
+    }
+
+    @media screen and (max-width: 425px) {
+      #offlineText {
+        left: 6%;
+      }
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://checkout.razorpay.com/v1/razorpay.js"></script>
+  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=3b363d5d-884c-4d9c-ace0-76543ebab05e">
+  </script>
+
+  <!-- testing sameera -->
+  <!-- <script type='application/javascript' src='/path/to/fastclick.js'></script> -->
+  <meta name="viewport" content="width=device-width">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3"> -->
+
+  <!-- testing sameera -->
+
+
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M4J7H6K');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Glogal Site tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21871889-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'UA-21871889-5');
+  </script>
+  <!-- Glogal Site tag (gtag.js) -->
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <div id="offline"></div>
+  <div id="offlineText"></div>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script type="text/javascript" id="razPayId" src="https://checkout.razorpay.com/v1/razorpay.js"></script>
+
+  <script language="JavaScript">
+    if (navigator.onLine) {
+      window.IGLOO = window.IGLOO || {
+        "enable_rip": true, // Enable Real IP protection.
+        "enable_flash": false, // Disable flash
+        "install_flash": false, // Don't ask user to install flash
+        "loader": {
+          "version": "general5", // Non-experimental 5.x updates
+          "fp_static": false // Don't load 1st party resources
+        }
+      }
+    }; // collect Real IP information
+//   <!-- testing sameera -->
+    // if ('addEventListener' in document) {
+    //   document.addEventListener('DOMContentLoaded', function () {
+    //     FastClick.attach(document.body);
+    //   }, false);
+    // }
+    //   <!-- testing sameera -->
+
+  </script>
+  <script src="%PUBLIC_URL%/iovation-loader-5.x.js"></script>
+  <!-- <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyA79lQSPm1NNUGRjGTibCsjr4X3mzQrFxA",
+      projectId: "bodyshop-322001",
+      appId: "1:396804377443:web:e0f8b945d44647f8c2e156",
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+  </script> -->
+  <!-- <script type="text/javascript">
+    var clevertap = { event: [], profile: [], account: [], onUserLogin: [], notifications: [], privacy: [] };
+    // replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
+    clevertap.account.push({ "id": "TEST-96Z-Z74-RK6Z" });
+    clevertap.privacy.push({ optOut: false }); //set the flag to true, if the user of the device opts out of sharing their data
+    clevertap.privacy.push({ useIP: true }); //set the flag to true, if the user agrees to share their IP data
+    (function () {
+      var wzrk = document.createElement('script');
+      wzrk.type = 'text/javascript';
+      wzrk.async = true;
+      wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/a.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wzrk, s);
+    })();
+  </script> -->
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('serviceWorker.js').then(function (registration) {
+          // Registration was successful
+        }, function (err) {
+          // registration failed :(
+        });
+      });
+    }
+  </script>
+  <script>
+    var OfflineHtml = `<img src="/assests/images/nointernet.svg"/><h2>No Internet. Please check your connection</h2>`
+    if (!navigator.onLine) {
+      document.getElementById("offline").innerHTML = OfflineHtml
+      document.body.style.overscrollBehaviorY = "contain"
+      // document.body.style.pointerEvents = "none"
+    }
+
+    OfflineHtml = `<h2>No Internet Connection</h2>`
+    self.addEventListener("offline", function (event) {
+      document.getElementById("offlineText").innerHTML = OfflineHtml
+      document.body.style.overscrollBehaviorY = "contain"
+      // document.body.style.pointerEvents = "none"
+
+    })
+    self.addEventListener("online", function (event) {
+      document.getElementById("offlineText").innerHTML = ""
+      document.getElementById("offline").innerHTML = ""
+      document.body.style.overscrollBehaviorY = "auto"
+      // document.body.style.pointerEvents = "all"
+
+    })
+  </script>
+
+
+
+  <script type="text/javascript">
+    if (navigator.onLine) {
+      document.onreadystatechange = function () {
+        if (document.readyState == "complete") {
+          // zE('messenger', 'open');
+          var user = {};
+          if (localStorage.getItem("guestUser") !== 'true') {
+            user = {
+              name: localStorage.getItem("fullName"),
+              email: localStorage.getItem("email"),
+              phone: localStorage.getItem("mobileNo")
+            }
+          }
+          zE("webWidget", "identify", user);
+          if (localStorage.getItem("underMaintenance") === '1') {
+            zE && zE.hide()
+          }
+          // var isMobile = Math.min(window.screen.width, window.screen.height) < 768 
+          // || navigator.userAgent.indexOf(
+          //   "Mobi") > -1
+
+          // function mobileCheck() {
+          //   let Window = window
+          //   let check = false;
+          //   (function (a) { if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw(n|u)|c55\/|capi|ccwa|cdm|cell|chtm|cldc|cmd|co(mp|nd)|craw|da(it|ll|ng)|dbte|dcs|devi|dica|dmob|do(c|p)o|ds(12|d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(|_)|g1 u|g560|gene|gf5|gmo|go(\.w|od)|gr(ad|un)|haie|hcit|hd(m|p|t)|hei|hi(pt|ta)|hp( i|ip)|hsc|ht(c(| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i(20|go|ma)|i230|iac( ||\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|[a-w])|libw|lynx|m1w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|mcr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|([1-8]|c))|phil|pire|pl(ay|uc)|pn2|po(ck|rt|se)|prox|psio|ptg|qaa|qc(07|12|21|32|60|[2-7]|i)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h|oo|p)|sdk\/|se(c(|0|1)|47|mc|nd|ri)|sgh|shar|sie(|m)|sk0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h|v|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl|tdg|tel(i|m)|tim|tmo|to(pl|sh)|ts(70|m|m3|m5)|tx9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas|your|zeto|zte/i.test(a.substr(0, 4))) check = true; })(navigator.userAgent || navigator.vendor || Window.opera);
+          //   return check;
+          // }
+
+          // if (mobileCheck()) {
+          //   zE('webWidget', 'hide');
+          // }
+        }
+      }
+    }
+  </script>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4J7H6K" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>

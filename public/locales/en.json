@@ -1,0 +1,19 @@
+{
+    "mobile_or_email": "Mobile Number or Email ID here",
+    "resend_otp": "Resend Otp",
+    "verify": "Verify Now",
+    "proceed": "Proceed",
+    "email": "Email Address",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "forget_password": "Forgot Password ?",
+    "sign_up": "Sign Up",
+    "name": "Name",
+    "mobile": "Mobile Number",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "dob" : "Date of Birth",
+    "optional" : "Optional"
+}

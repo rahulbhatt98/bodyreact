@@ -1,0 +1,114 @@
+.carousel.carousel-slider {
+  overflow: inherit;
+}
+
+.control-arrow {
+  opacity: 1 !important;
+}
+
+
+.carousel, .carousel.carousel-slider, .control-arrow {
+  opacity: 1;
+  top: -10px;
+}
+
+.carousel .carousel-status {
+  display: none;
+}
+
+.carousel .control-next.control-arrow:before {
+  background-color: #fff;
+  min-height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 1rem;
+  color: #0f4236;
+  background-image: url("./testinmonialArrow.svg");
+}
+
+.carousel .thumbs-wrapper {
+  margin: 0px;
+  overflow: hidden;
+}
+
+.carousel .control-dots {
+  position: absolute;
+  bottom: 0;
+  margin: -30px 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.carousel .control-next.control-arrow:before {
+  background-color: #fff;
+  min-height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  padding-top: 0px;
+  margin-top: 30px;
+  /* padding: 10px; */
+  margin: 30px -40px 0px 0px;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  color: #0f4236;
+  transform: rotate(180deg);
+  background-image: url(./testinmonialArrow.svg);
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 2px solid #fff;
+}
+
+.carousel .control-next.control-arrow:before:hover {
+  background: none;
+}
+
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+  /* margin: 0 0px; */
+  display: inline-block;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  content: "";
+}
+
+.carousel .control-prev.control-arrow:before {
+  background-color: #fff;
+  min-height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  padding-top: 0px;
+  margin-top: 30px;
+  margin: 30px 0px 0px -40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #0f4236;
+  background-image: url(./testinmonialArrow.svg);
+}
+
+/* .carousel .control-prev.control-arrow::before:hover {
+  background: none;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: none;
+} */
+
+.carousel .control-pre.control-arrow:before {
+  border-left: 2px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel .control-prev, .carousel .control-prev:hover {
+    display: none;
+  }
+  .carousel .control-next, .carousel .control-next:hover {
+    display: none;
+  }
+}
+
+.control-arrow:hover {
+  background: none !important;
+}
